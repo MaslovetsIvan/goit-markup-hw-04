@@ -122,6 +122,7 @@ body{
     background: #C4C4C4;
     background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
     url(../images/bgrhero.jpg);
+
     }
 
 .hero-title{
@@ -259,6 +260,12 @@ margin-left: 30px;
 .team-title-text{
     padding-top: 30px;
     padding-bottom: 30px;
+    /*border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+
 }
 .team-container-link{
     display: flex;
@@ -266,6 +273,7 @@ margin-left: 30px;
 
 }
 .team-container-link-img{
+
     margin-right: 10px;
     margin-top: 16px;
     
@@ -275,7 +283,6 @@ margin-left: 30px;
 }
 
 .team-container-icon{
-    /*border: 1px solid #000;*/
     border-radius: 50%;
     fill: #AFB1B8;
     width: 44px;
@@ -301,13 +308,13 @@ margin-left: 30px;
     fill: #AFB1B8;
     width: 170px;
     height: 92px;
+    border-radius: 4px;
 
 }
 .clients-link:hover,
 .clients-link:focus{
     fill: #2196F3;
     border: 1px solid  #2196F3;
-    /*background-color: #E5E5E5;*/
 }
 /*Парфолио*/
 .work-contaner{
@@ -348,13 +355,16 @@ margin-left: 30px;
     margin: -15px -15px 0px -15px;
 }
 .projects-contanet-item{
-    border: 1px solid #eee;
+    border: 1px solid #EEEEEE;
     margin: 15px;
 }
 .projects-contanet-item:nth-child(3n+3){
     margin-right: 0;
 }
-
+.projects-contanet-item:hover,
+.projects-contanet-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .catalog{
     display: grid;
     text-decoration: none;
@@ -443,19 +453,37 @@ footer{
 .nav-footer-city:focus{
     color: #2196F3;
 }
+.footer-container-link-img{
+    margin-right: 10px;
+}
 .footer-contaner-link{
     display: flex;
     flex-direction: column;
-
+    margin-top: 10px;
 }
 .footer-title{
+    
     color: #FFFFFF;
     margin: 0;
+    text-transform:uppercase;
 }
 .footer-link{
     display: flex;
     margin: 0;
-    
+    margin-top: 20px;
+}
+.footer-container-icon{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
 
+
+}
+.footer-container-icon:hover,
+.footer-container-icon:focus{
+    fill: #f3f5f8;
+    background-color: #2196F3;
 }
     
