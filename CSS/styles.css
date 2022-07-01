@@ -67,7 +67,13 @@ ul {
     margin-right: 50px;
 
 }
-
+.icon-header{
+    border: 0;
+    
+}
+.envelope-icon{
+    
+}
 .nav-head:hover,
 .nav-head:focus {
 	color: #2196F3;
@@ -79,22 +85,26 @@ ul {
     margin-left: 50px;
 }
 
-.header-nav-contact{
-    display: flex;
-    align-items: flex-start;
-}
 .nav-contact{
-
     text-decoration: none;
     color: var(--paragraph-color);
-    /**/
+    
 }
-.nav-contact:hover,
-.nav-contact:focus{
+.nav-contact:hover ,
+.nav-contact:focus {
     color: #2196F3;
 }
 .page{
+    display: flex;
     margin-left: auto;
+}
+.page-icon{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.page-icon-img:hover{
+    fill: #2196F3;
 }
 
 body{ 
@@ -107,9 +117,11 @@ body{
 .hero{
     display: flex;
     justify-content: center;
-    background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background: #C4C4C4;
+    background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+    url(../images/bgrhero.jpg);
     }
 
 .hero-title{
@@ -157,7 +169,18 @@ body{
 }
 .benefits-item-submenu{
     width: 270px;
+        
 }
+.benefits-item-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .submenu-titel{
     color: var(--title-color);
     text-transform:uppercase;
@@ -237,7 +260,55 @@ margin-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.team-container-link{
+    display: flex;
+    justify-content:center;
 
+}
+.team-container-link-img{
+    margin-right: 10px;
+    margin-top: 16px;
+    
+}
+.activities{
+    
+}
+
+.team-container-icon{
+    /*border: 1px solid #000;*/
+    border-radius: 50%;
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+
+}
+.team-container-icon:hover,
+.team-container-icon:focus{
+    fill: #f3f5f8;
+    background-color: #2196F3;
+}
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.clients-link{
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+
+}
+.clients-link:hover,
+.clients-link:focus{
+    fill: #2196F3;
+    border: 1px solid  #2196F3;
+    /*background-color: #E5E5E5;*/
+}
 /*Парфолио*/
 .work-contaner{
     display: flex;
@@ -317,10 +388,16 @@ footer{
     background: #2F303A;
 }
 .footer-info{
-    display: flex;
-    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 50px;
+}
+.footer-address{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+.footer-contaner{
+    display: flex;
 }
 
 .logo-footer{
@@ -366,6 +443,19 @@ footer{
 .nav-footer-city:focus{
     color: #2196F3;
 }
+.footer-contaner-link{
+    display: flex;
+    flex-direction: column;
 
+}
+.footer-title{
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer-link{
+    display: flex;
+    margin: 0;
+    
 
+}
     
